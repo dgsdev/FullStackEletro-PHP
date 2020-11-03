@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 03-Nov-2020 às 02:52
+-- Tempo de geração: 03-Nov-2020 às 04:32
 -- Versão do servidor: 8.0.21
 -- versão do PHP: 7.4.9
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
   `msg` varchar(300) NOT NULL,
   `data` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `comentarios`
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `pedido` (
   `quantidade` int NOT NULL,
   `preco_total` decimal(8,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `pedido`
@@ -96,18 +96,18 @@ CREATE TABLE IF NOT EXISTS `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `categorias`, `descricao`, `preco`, `preco_venda`, `imagem`) VALUES
-(14, 'geladeiras ', 'Geladeira Frost Free Brastemp Side Inverse 540L', '6389.00', '5019.00', './assets/geladeiraprata.jpeg'),
-(15, 'geladeiras ', 'Geladeira Frost Free Brastemp Branca 375 Litros', '2068.60', '1910.90', './assets/geladeira.jpg'),
-(16, 'geladeiras ', 'Geladeira Frost Free Consul Prata 340 Litros', '2199.00', '2069.00', './assets/geladeiraprata2.jpg'),
+(14, 'geladeiras', 'Geladeira Frost Free Brastemp Side Inverse 540L', '6389.00', '5019.00', './assets/geladeiraprata.jpeg'),
+(15, 'geladeiras', 'Geladeira Frost Free Brastemp Branca 375 Litros', '2068.60', '1910.90', './assets/geladeira.jpg'),
+(16, 'geladeiras', 'Geladeira Frost Free Consul Prata 340 Litros', '2199.00', '2069.00', './assets/geladeiraprata2.jpg'),
 (17, 'fogão', 'Fogão 4 Bocas Consul Inox com Mesa de Vidro', '1299.00', '1129.00', './assets/FogãoPequeno.jpeg'),
 (18, 'fogão', 'Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático', '600.00', '519.70', './assets/fogão.jpeg'),
-(19, 'microondas ', 'Micro-ondas Consul 32 Litros inox', '580.00', '409.88', './assets/micro.jpeg'),
-(20, 'microondas ', 'Microondas 25L Espelhado Philco', '508.70', '464.53', './assets/micro2.jpeg'),
-(21, 'microondas ', 'Forno de Microondas Eletrolux 20L', '1299.00', '1129.00', './assets/microondas.jpeg'),
-(22, 'lavadouras_roupa ', 'Lavadoura de Roupas Brastemp 11KG com Turbo Performance Branca', '1699.00', '1214.10', './assets/lavalouça1.jpeg'),
-(23, 'lavadouras_roupa ', 'Lavadoura de Roupas', '2399.00', '2179.90', './assets/lavalouça2.jpeg'),
-(24, 'lava_louças ', 'Lava-louça Eletrolux Inox com 10 serviços, 06 Programas de Lavagem e Painel Blue Touch', '3599.00', '2799.90', './assets/lavadora.jpeg'),
-(25, 'lava_louças ', 'Lava Louça Compacta, 8 Serviços Branca 127V', '1970.50', '1730.61', './assets/secadora.jpeg');
+(19, 'microondas', 'Micro-ondas Consul 32 Litros inox', '580.00', '409.88', './assets/micro.jpeg'),
+(20, 'microondas', 'Microondas 25L Espelhado Philco', '508.70', '464.53', './assets/micro2.jpeg'),
+(21, 'microondas', 'Forno de Microondas Eletrolux 20L', '1299.00', '1129.00', './assets/microondas.jpeg'),
+(22, 'lavadouras_roupa', 'Lavadoura de Roupas Brastemp 11KG com Turbo Performance Branca', '1699.00', '1214.10', './assets/lavalouça1.jpeg'),
+(23, 'lavadouras_roupa', 'Lavadoura de Roupas', '2399.00', '2179.90', './assets/lavalouça2.jpeg'),
+(24, 'lava_louças', 'Lava-louça Eletrolux Inox com 10 serviços, 06 Programas de Lavagem e Painel Blue Touch', '3599.00', '2799.90', './assets/lavadora.jpeg'),
+(25, 'lava_louças', 'Lava Louça Compacta, 8 Serviços Branca 127V', '1970.50', '1730.61', './assets/secadora.jpeg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
