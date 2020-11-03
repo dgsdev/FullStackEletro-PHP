@@ -1,5 +1,5 @@
 function exibir_categoria(categoria){
-    let elementos = document.getElementByClassName('box_produto');
+    let elementos = document.getElementsByClassName("box_produto");
     console.log(elementos);
     for(var i=0; i<elementos.length; i++){
         console.log(elementos[i]);
@@ -12,7 +12,7 @@ function exibir_categoria(categoria){
 
 
 let exibir_todos = () => {
-    let elementos = document.getElementsByClassName('box_produto');
+    let elementos = document.getElementsByClassName("box_produto");
     for(var i=0; i<elementos.length;i++){
         elementos[i].style = 'display:inline-block';
     }
@@ -27,9 +27,12 @@ let zoom = (imagem) => {
 
 
 function upScaleMenu(x){
-    x.style="font-weight: bold; color: #0099cc;";
+    x.style="text-decoration: none; font-weight: bold; color: #0099cc;";
 }
 
 function downScaleMenu(x){
-    x.style="font-weight: none; color: #000;";
+    x.style="text-decoration: none; font-weight: none; color: #000;";
+}
+function downScaleM(x){
+    x.style="text-decoration: none; font-weight: bold; color: red;";
 }

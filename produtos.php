@@ -25,12 +25,12 @@ require_once('link.php');
                     <h3 class="categoria">Categorias</h3>                  
                     <ul class="categoria">
                         <li onclick="exibir_todos()" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Todos Produtos (12)</li>
-                        <li onclick="exibir_categoria('geladeiras')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Geladeiras (3)</li>
-                        <li onclick="exibir_categoria('fogões')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Fogões (2)</li>
-                        <li onclick="exibir_categoria('microondas')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Microondas (3)</li>
-                        <li onclick="exibir_categoria('lava_roupas')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Lavadouras de roupa  (2)</li>
-                        <li onclick="exibir_categoria('lava_loucas')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Lava-louças (2)</li>
-                        <li><a href="pedido.php" style="text-decoration: none; color: #0099cc; font-weight: bold;">Faça seu Pedido</a></li>
+                        <li onclick="exibir_categoria('geladeiras  ')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Geladeiras (3)</li>
+                        <li onclick="exibir_categoria('fogão ')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Fogões (2)</li>
+                        <li onclick="exibir_categoria('microondas  ')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Microondas (3)</li>
+                        <li onclick="exibir_categoria('lavadouras_roupa  ')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Lavadouras de roupa  (2)</li>
+                        <li onclick="exibir_categoria('lava_louças  ')" onmouseover="upScaleMenu(this)" onmouseout="downScaleMenu(this)">Lava-louças (2)</li>
+                        <li><a href="pedido.php" style="text-decoration: none; color: #000; font-weight: bold;" onmouseover="upScaleMenu(this)" onmouseout="downScaleM(this)">Faça seu Pedido</a></li>                        
                     </ul>
                 </td>
         </section>
@@ -38,7 +38,7 @@ require_once('link.php');
 <section class="produtos">     
 <?php 
               
-$sql = "SELECT * FROM produtos";
+$sql = "SELECT * FROM produtos;";
 $result = $link->query($sql);
 
 if ($result->num_rows > 0){
@@ -46,7 +46,7 @@ if ($result->num_rows > 0){
           
 ?>
 
-<div class="box_produto" id="<?php echo $rows["categorias"]; ?>">                
+    <div class="box_produto" id="<?php echo $rows["categorias"]; ?> ">                
     <img src="<?php echo $rows["imagem"]; ?>" alt="<?php echo $rows["descricao"]; ?>" class="itens" onclick="zoom(this)">
     <br>
     <p class="descricao"><?php echo $rows["descricao"]; ?></p>
@@ -54,7 +54,7 @@ if ($result->num_rows > 0){
     <p class="descricao"><strike>R$ <?php echo $rows["preco"]; ?></strike></p>
     <p class="preco">R$ <?php echo $rows["preco_venda"]; ?></p>                 
 </div>
-
+       
 
 <?php
        }

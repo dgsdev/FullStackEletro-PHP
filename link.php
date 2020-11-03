@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "2CqI1LZqdIKMnETf";
+$password = "";
 $database = "fseletro";
 /*
 $servername = "localhost";
